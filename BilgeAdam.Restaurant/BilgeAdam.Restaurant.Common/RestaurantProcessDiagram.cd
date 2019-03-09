@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="NameAndType">
+  <Class Name="BilgeAdam.Restaurant.Common.Models.Client">
+    <Position X="5.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAIAAAAAAQAAAAAAAAAAAAgAAIAAAAAA=</HashCode>
+      <FileName>Models\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BilgeAdam.Restaurant.Common.Models.Corporate">
+    <Position X="5.75" Y="3.25" Width="2.75" />
+    <AssociationLine Name="Orders" Type="BilgeAdam.Restaurant.Common.Models.Order" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="4.062" />
+        <Point X="4.625" Y="4.062" />
+        <Point X="4.625" Y="7.312" />
+        <Point X="3.25" Y="7.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAAECAAQAAAAAAIAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\Corporate.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Menu" />
+      <Property Name="Orders" />
+      <Property Name="Reservations" />
+      <Property Name="Tables" />
+      <Property Name="Clients" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BilgeAdam.Restaurant.Common.Models.Order">
+    <Position X="0.5" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAQ=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BilgeAdam.Restaurant.Common.Models.Product">
+    <Position X="9.5" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAwAAAAAAAAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BilgeAdam.Restaurant.Common.Models.Reservation">
+    <Position X="6" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAAQ=</HashCode>
+      <FileName>Models\Reservation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BilgeAdam.Restaurant.Common.Models.Table">
+    <Position X="1" Y="3" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAEAAAAAAAACAAAAACAAAAAAAAAwAAAAAAAAA=</HashCode>
+      <FileName>Models\Table.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Orders" />
+      <Property Name="Clients" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Enum Name="BilgeAdam.Restaurant.Common.Enums.ProductType" Collapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAwAAAAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\ProductType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BilgeAdam.Restaurant.Common.Enums.TableType" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAABAAAAAgA=</HashCode>
+      <FileName>Enums\TableType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
