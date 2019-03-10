@@ -37,13 +37,13 @@
             this.masalarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.masaÇıkışıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelUyarısıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.msbNewClient = new System.Windows.Forms.ToolStripMenuItem();
+            this.msbClients = new System.Windows.Forms.ToolStripMenuItem();
             this.siparişToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yeniSiparişToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hesapDetayıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ödemeAlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.msbNewClient = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.msbClients = new System.Windows.Forms.ToolStripMenuItem();
             this.mstMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +95,7 @@
             // msbNewReservation
             // 
             this.msbNewReservation.Name = "msbNewReservation";
-            this.msbNewReservation.Size = new System.Drawing.Size(180, 22);
+            this.msbNewReservation.Size = new System.Drawing.Size(164, 22);
             this.msbNewReservation.Text = "Yeni Rezervasyon";
             this.msbNewReservation.Click += new System.EventHandler(this.msbNewReservation_Click);
             // 
@@ -105,20 +105,39 @@
             this.masaÇıkışıToolStripMenuItem,
             this.personelUyarısıToolStripMenuItem});
             this.masalarToolStripMenuItem.Name = "masalarToolStripMenuItem";
-            this.masalarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.masalarToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.masalarToolStripMenuItem.Text = "Masalar";
             // 
             // masaÇıkışıToolStripMenuItem
             // 
             this.masaÇıkışıToolStripMenuItem.Name = "masaÇıkışıToolStripMenuItem";
-            this.masaÇıkışıToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.masaÇıkışıToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.masaÇıkışıToolStripMenuItem.Text = "Masa Çıkışı";
             // 
             // personelUyarısıToolStripMenuItem
             // 
             this.personelUyarısıToolStripMenuItem.Name = "personelUyarısıToolStripMenuItem";
-            this.personelUyarısıToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelUyarısıToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.personelUyarısıToolStripMenuItem.Text = "Personel Uyarısı";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(161, 6);
+            // 
+            // msbNewClient
+            // 
+            this.msbNewClient.Name = "msbNewClient";
+            this.msbNewClient.Size = new System.Drawing.Size(164, 22);
+            this.msbNewClient.Text = "Yeni Müşteri";
+            this.msbNewClient.Click += new System.EventHandler(this.msbNewClient_Click);
+            // 
+            // msbClients
+            // 
+            this.msbClients.Name = "msbClients";
+            this.msbClients.Size = new System.Drawing.Size(164, 22);
+            this.msbClients.Text = "Müşteriler";
+            this.msbClients.Click += new System.EventHandler(this.msbClients_Click);
             // 
             // siparişToolStripMenuItem
             // 
@@ -148,25 +167,6 @@
             this.ödemeAlToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.ödemeAlToolStripMenuItem.Text = "Ödeme Al";
             // 
-            // msbNewClient
-            // 
-            this.msbNewClient.Name = "msbNewClient";
-            this.msbNewClient.Size = new System.Drawing.Size(180, 22);
-            this.msbNewClient.Text = "Yeni Müşteri";
-            this.msbNewClient.Click += new System.EventHandler(this.msbNewClient_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // msbClients
-            // 
-            this.msbClients.Name = "msbClients";
-            this.msbClients.Size = new System.Drawing.Size(180, 22);
-            this.msbClients.Text = "Müşteriler";
-            this.msbClients.Click += new System.EventHandler(this.msbClients_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,8 +176,9 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.mstMain;
             this.Name = "frmMain";
-            this.Text = "BilgeAdam Lokantası";
+            this.Text = "Lokantası Sistemi";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.mstMain.ResumeLayout(false);
             this.mstMain.PerformLayout();
             this.ResumeLayout(false);

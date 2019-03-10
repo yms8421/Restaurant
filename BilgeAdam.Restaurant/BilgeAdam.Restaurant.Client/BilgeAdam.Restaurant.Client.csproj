@@ -106,5 +106,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BilgeAdam.Restaurant.Common\BilgeAdam.Restaurant.Common.csproj">
+      <Project>{a45300b5-d6cd-4c23-b5a5-ed7d86b6860f}</Project>
+      <Name>BilgeAdam.Restaurant.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

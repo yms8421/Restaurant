@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Restaurant.Common
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Restaurant.Tests", "BilgeAdam.Restaurant.Tests\BilgeAdam.Restaurant.Tests.csproj", "{AB7AB09B-F9A8-4446-B5FF-022AB932F190}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB5C58E7-D5DE-4048-BD1B-DBEA82A53071}"
+	ProjectSection(SolutionItems) = preProject
+		HomeWork.txt = HomeWork.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

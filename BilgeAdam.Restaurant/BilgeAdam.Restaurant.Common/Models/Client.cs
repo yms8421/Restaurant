@@ -2,11 +2,36 @@
 
 namespace BilgeAdam.Restaurant.Common.Models
 {
-    public class Client : ModelBase
+    public sealed class Client : ModelBase
     {
-        public string FullName { get; set; }
-        public string Phone { get; set; }
+        private Client()
+        {
+
+        }
+        public string FullName { get; private set; }
+        public string Phone { get; private set; }
         public Table Table { get; set; }
+        /// <summary>
+        /// Müşteri oluşturmayı sağlar.
+        /// </summary>
+        /// <param name="name">müşteri adı (isim boş olamaz ve isim soyisim biçiminde yazılmalıdır)</param>
+        /// <param name="phone">müşteri telefonu (boş geçilmez)</param>
+        /// <returns>oluşturulan müşteri</returns>
+        public static Client CreateClient(string name, string phone)
+        {
+            ValidationHelper.CheckNullEntry(name, "isim");
+            ValidationHelper.CheckNullEntry(phone, "telefon");
+            ValidationHelper.CheckTextLength(name, 5, "isim");
+            ValidationHelper.CheckIfRealName(name, "isim");
+            ValidationHelper.CheckIfPhone(phone);
+
+            var newClient = new Client
+            {
+                FullName = name,
+                Phone = phone
+            };
+            return newClient;
+        }
     }
 }
 

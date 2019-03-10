@@ -1,0 +1,16 @@
+Öyle bir þey yapýn ki 
+	bir class'ýn instance'ý bir kere alýnabilsin
+
+Vehicle	
+var a = ÖyleBirÞeyKi;
+a.ControlCount = 9;
+CW(a.ControlCount); //9
+a.ControlCount++;
+CW(a.ControlCount); //10
+
+var b = ÖyleBirÞeyKi;
+CW(b.ControlCount); //10
+b.ControlCount++;
+CW(b.ControlCount); //11
+
+MarshalByRefObject tipinin aslýnda ne olduðunu rica etsem okur musunuz?

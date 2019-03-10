@@ -44,6 +44,7 @@
     <Compile Include="Enums\ProductType.cs" />
     <Compile Include="Enums\TableType.cs" />
     <Compile Include="Helper\EnumerateManager.cs" />
+    <Compile Include="Helper\ValidationHelper.cs" />
     <Compile Include="ModelBase.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Corporate.cs" />

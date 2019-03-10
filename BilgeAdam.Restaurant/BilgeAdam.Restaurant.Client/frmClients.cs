@@ -25,5 +25,11 @@ namespace BilgeAdam.Restaurant.Client
             };
             f.Show();
         }
+
+        private void frmClients_Load(object sender, EventArgs e)
+        {
+            dgvClients.AutoGenerateColumns = false;//kendisine binding verilirken gönderilen bütün property'lerin kolona dönüştürülmesi sağlanır. Bunu yapmasın. Çünkü biz manuel olarak kolonları oluşturduke
+            dgvClients.DataSource = (this.MdiParent as frmMain).Corporate.Clients;
+        }
     }
 }
